@@ -2,48 +2,33 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Bader",
+  lastName: "Almutairi",
+  name: `Bader Almutairi`,
+  role: "Computer Science & Cybersecurity Student",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "baderalmshari@gmail.com",
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Arabic"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>My newsletter about cybersecurity and software engineering</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/BaderAlmutairi123",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/bader-almutairi-0a1a34157",
     essential: true,
   },
   {
@@ -60,23 +45,23 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Securing systems and building full-stack solutions</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Pantry Tracker</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Featured project
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/pantry-tracker",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Bader, a Computer Science & Cybersecurity student at <Text as="span" size="xl" weight="strong">Hofstra University</Text>, passionate about building secure, full-stack applications and exploring offensive security.
 </>
   ),
 };
@@ -94,7 +79,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -102,9 +87,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Bader is a Computer Science and Cybersecurity student at Hofstra University with a passion
+        for building full-stack applications and exploring offensive security techniques. His work
+        spans web development, system administration, and cybersecurity research.
       </>
     ),
   },
@@ -113,41 +98,41 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Kuwait Oil Company",
+        timeframe: "May 2022 - August 2022",
+        role: "Technical Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Administered user access management system, creating new user accounts and configuring
+            role-based permissions to ensure secure system access.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed and executed SQL queries to manage database operations, generate reports, and
+            optimize data retrieval processes for improved system performance.
+          </>,
+          <>
+            Provided first-line technical support to end users, resolving access-related issues and
+            system queries while maintaining a professional response time.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Hofstra University",
+        timeframe: "September 2023 - August 2024",
+        role: "Vice President, Muslim Student Association",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Orchestrated weekly Friday prayer services for two semesters, coordinating logistics,
+            space requirements, and participant communications.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Established and maintained relationships with campus faculty and administration to
+            advocate for MSA needs and resources.
+          </>,
+          <>
+            Led event planning and execution for cultural and religious programming, strengthening
+            the Muslim community on campus.
           </>,
         ],
         images: [],
@@ -159,12 +144,8 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Hofstra University",
+        description: <>Bachelor of Science in Computer Science and Cybersecurity (Sep 2022 – May 2026)</>,
       },
     ],
   },
@@ -173,60 +154,45 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Languages",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Proficient in multiple programming languages for web, systems, and data work.</>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "Python", icon: "python" },
+          { name: "Java", icon: "java" },
+          { name: "JavaScript", icon: "javascript" },
+          { name: "C/C++", icon: "cpp" },
+          { name: "Rust", icon: "rust" },
+          { name: "SQL", icon: "sql" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Frameworks & Tools",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Building full-stack applications with modern frameworks and developer tools.</>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "React", icon: "react" },
+          { name: "Node.js", icon: "nodejs" },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "FastAPI", icon: "fastapi" },
+          { name: "Git", icon: "github" },
+          { name: "GCP", icon: "gcp" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        images: [],
+      },
+      {
+        title: "Cybersecurity",
+        description: (
+          <>Experienced in offensive security, exploit development, and Linux system administration.</>
+        ),
+        tags: [
+          { name: "Metasploit", icon: "shield" },
+          { name: "Linux", icon: "linux" },
         ],
+        images: [],
       },
     ],
   },
@@ -235,7 +201,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about cybersecurity and software engineering...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -245,7 +211,7 @@ const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
